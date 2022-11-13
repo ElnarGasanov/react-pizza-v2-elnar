@@ -1,0 +1,70 @@
+.root {
+    position: relative;
+
+    display: flex;
+
+    @media screen and (max-width: 830px) {
+        margin: 15px 0;
+    }
+}
+
+.input {
+    width: 300px;
+    padding: 12px 40px;
+    border-radius: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+
+    font-size: 16px;
+
+    &:focus {
+        border: 1px solid rgba(0, 0, 0, 0.2);
+    }
+
+    @media screen and (max-width: 1150px) {
+        width: 200px;
+        padding: 8px 25px;
+    }
+
+    @media screen and (max-width: 930px) {
+        width: 150px;
+        padding: 5px 18px;
+    }
+}
+
+.iconSearch {
+    position: absolute;
+    top: 12px;
+    left: 5px;
+
+    width: 24px;
+
+    opacity: 0.5;
+
+    @media screen and (max-width: 1150px) {
+        width: 18px;
+    }
+
+    @media screen and (max-width: 930px) {
+        width: 10px;
+    }
+}
+
+.iconClear {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+
+    width: 30px;
+
+
+    opacity: 0.5;
+    cursor: pointer;
+
+    @media screen and (max-width: 1150px) {
+        width: 25px;
+    }
+
+    @media screen and (max-width: 930px) {
+        width: 15px;
+    }
+}
